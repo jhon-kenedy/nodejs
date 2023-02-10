@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: nodeserver
-        image: pallavi567/nodeapp:latest
+        image: pallavi567/nodeapp:$BUILD_NUMBER
         ports:
         - containerPort: 3000
