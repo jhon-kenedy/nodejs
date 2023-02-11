@@ -18,7 +18,7 @@ spec:
       - name: nodeserver
         image: pallavi567/nodeapp:$BUILD_NUMBER
         ports:
-        - containerPort: 3000
+        - containerPort: 8080
         
         
 ---
@@ -34,5 +34,5 @@ spec:
   ports:
   - protocol: TCP
     port: 8080
-    targetPort: 3000
-    nodePort: 31110
+    targetPort: 8080
+    nodePort: 8080
